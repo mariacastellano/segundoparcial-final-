@@ -1,0 +1,47 @@
+/* --- Contenedor principal del perfil --- */
+.perfil-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 24px;
+  margin: 20px auto;
+  max-width: 700px;
+
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease;
+}
+
+.perfil-container:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+/* --- Imagen de perfil --- */
+.perfil-container img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  flex-shrink: 0;
+
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(122, 76, 164, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.perfil-container img:hover {
+  transform: scale(1.05);
+}
+
+/* --- Texto del perfil --- */
+.perfil-texto {
+  flex: 1;
+  color: #4e4e4e;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.perfil-texto p {
+  margin: 8px 0;
+  font-size: 1rem;
+}
